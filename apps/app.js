@@ -4,6 +4,7 @@ $(function(){
     $('#search-term').submit(function(event){
         event.preventDefault();
         var searchTerm=$('#query').val();
+        console.log("test string :"+searchTerm);
         getRequest(searchTerm);
     })
         /* 
@@ -52,9 +53,9 @@ function getRequest (searchTerm){
     var params = {
         s:searchTerm,
         r:'json'
-    }
+    };
     console.log(params);
-    url='www.omdbapi.com/';
+    url='http://www.omdbapi.com';
     $.getJSON(url,params,function(sData){
         showresults2(sData.Search);
     });
