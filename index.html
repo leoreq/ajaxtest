@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AJAX Test</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="apps/app.js"></script>
+	<style>
+		input {
+			font-size:3em;
+		}
+		#search-term{
+	 		position: absolute;
+		  	left: 20%;
+		  	text-align:center;
+		}
+		 #search-results {
+			position: absolute;
+			margin-top: 4em;
+			left: 15%;
+			text-align: center;
+		  	font-size: 2em;
+		}
+	</style>
+</head>
+<body>
+	<form id="search-term">
+		<br>
+		<input id="query" type="text" name="firstname">
+		<br>
+
+<input  type="submit" value="Submit">
+</form>
+<div id="search-results">	</div>
+</body>
+</html>
